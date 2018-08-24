@@ -34,7 +34,6 @@ export default {
         text-align:center
         font-size: .35rem
         font-weight: bold
-
     .header-input
       flex: 1
       height: .64rem
