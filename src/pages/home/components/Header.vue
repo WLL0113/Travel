@@ -28,18 +28,18 @@ export default {
     background:$bgColor
     color:#fff
     .header-left
-      width: .64rem
+      width: .80rem
       float:left
       .back-icon
         text-align:center
-        font-size: .4rem
+        font-size: .35rem
+        font-weight: bold
 
     .header-input
       flex: 1
       height: .64rem
       line-height: .64rem
       margin-top: .12rem
-      margin-left: .2rem
       padding-left: .2rem
       border-radius: .1rem
       background:#fff
