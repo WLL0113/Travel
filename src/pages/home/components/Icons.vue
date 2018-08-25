@@ -100,7 +100,7 @@ export default{
         .icon-img-size
           display: block
           margin: 0 auto
-          height: 100%
+          height: 80%
         .icon-desc
           position: absolute
           left: 0
