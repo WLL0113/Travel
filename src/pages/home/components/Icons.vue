@@ -82,7 +82,6 @@ export default{
   .icons >>> .swiper-container
     height: 0
     padding-bottom: 50%
-    background: #ccc
     .icon
       position: relative
       overflow: hidden
@@ -101,7 +100,7 @@ export default{
         .icon-img-size
           display: block
           margin: 0 auto
-          height: 100%
+          height: 80%
         .icon-desc
           position: absolute
           left: 0
