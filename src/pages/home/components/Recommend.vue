@@ -43,11 +43,12 @@ export default {
 <style lang="stylus" scoped>
   @import '~styles/mixins.styl'
   .title
-    font-weight: bold
     width: 100%
     line-height: .5rem
     font-size: .30rem
-    padding: .1rem 0rem .1rem .2rem
+    font-weight: bold
+    padding: .1rem 0
+    text-indent:1em
     background: #eee
   .item
     overflow: hidden
