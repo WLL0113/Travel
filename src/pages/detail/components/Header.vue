@@ -65,6 +65,7 @@ export default {
     padding-top: .02rem
     padding-right: .07rem
 .header-fixed
+  z-index: 2
   position: fixed
   top: 0
   left: 0
