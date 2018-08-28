@@ -69,6 +69,7 @@ export default{
   methods: {
     handleCityClick (city) {
       this.changeCity(city)
+      this.keyword = ''
       this.$router.push('/')
     },
     ...mapMutations(['changeCity'])
