@@ -33,7 +33,7 @@ export default {
     background: #fff
     opacity: 0.9
   .title
-    font-size .38rem
+    font-size .40rem
     color: #ff8300
     text-align: center
     padding-bottom: 1rem
@@ -45,10 +45,11 @@ export default {
   .content
     line-height: .5rem
     color: #333
-    text-align: center
+    padding: 0 1rem
+    text-align: left
   .back
     position: relative
-    top: 7rem
+    top: 4rem
     width: .7rem
     height: .7rem
     margin: auto

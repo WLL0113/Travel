@@ -5,7 +5,7 @@
     </div>
     <div class="header-input">
       <span class="iconfont">&#xe632;</span>
-    输入城市/景点/游玩主题
+      <input v-model="keyword" type="text" placeholder="输入城市/景点/游玩主题"/>
     </div>
       <router-link to='/city'>
       <div class="header-right">
@@ -20,6 +20,11 @@
 import { mapState } from 'vuex'
 export default {
   name: 'HomeHeader',
+  data () {
+    return {
+      keyword: ''
+    }
+  },
   computed: {
     ...mapState(['city'])
   }
