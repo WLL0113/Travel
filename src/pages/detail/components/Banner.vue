@@ -6,7 +6,7 @@
         <div class="banner-title">故宫(AAAAA景区)</div>
           <div class="banner-number">
             <span class="iconfont banner-icon">&#xe67b;</span>
-              39
+              2
           </div>
       </div>
     </div>

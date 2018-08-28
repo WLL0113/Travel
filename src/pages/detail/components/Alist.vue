@@ -22,8 +22,8 @@
 
       <li class="line"></li>
 
-      <li class="binfo border-bottom">
-        <span class="iconfont bfront">&#xe605; </span>
+      <li class="binfo border-bottom" @click="handleClick">
+        <span class="iconfont bfront">&#xe825; </span>
         <span class="text">1.除法定节假日，故宫博物院实行周一闭馆。2.如遇天安门广场戒严，请从故宫两侧（东华门或西华门），沿故宫城墙步行至午门验票！</span>
         <span class="iconfont blast">&#xe62d;</span>
       </li>
@@ -31,12 +31,31 @@
       <li class="line"></li>
 
     </ul>
+    <detail-apper v-show="showAp" @close="handleClose"></detail-apper>
   </div>
 </template>
 
 <script>
+import DetailApper from './Apper'
+
 export default {
-  name: 'DetailAList'
+  name: 'DetailAList',
+  components: {
+    DetailApper
+  },
+  data () {
+    return {
+      showAp: false
+    }
+  },
+  methods: {
+    handleClick () {
+      this.showAp = true
+    },
+    handleClose () {
+      this.showAp = false
+    }
+  }
 }
 </script>
 
@@ -78,15 +97,15 @@ export default {
       display: flex
       height: .7rem
       line-height: .7rem
-      background: #FFD2D2
+      background: #fff5e5
       .bfront
-        color: red
+        color: #ff8300
         float: left
         padding: 0 .3rem
       .text
         flex: 1
         line-height: .7rem
-        color: red
+        color: #ff8300
         ellipsis()
       .blast
         float: right

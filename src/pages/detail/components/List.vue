@@ -24,13 +24,13 @@ export default {
 <style lang="stylus" scoped>
     .item-title-icon
       position: relative
-      left: .05rem
+      left: .1rem
       top: .07rem
       display: inline-block
       width: .36rem
       height: .36rem
       background: url(http://s.qunarzz.com/piao/image/touch/sight/detail.png) 0 -.45rem no-repeat
-      margin-right: .1rem;
+      margin-right: .2rem;
       background-size: .4rem 3rem;
     .item-title
       line-height: .8rem

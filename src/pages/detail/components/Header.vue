@@ -52,18 +52,16 @@ export default {
   position: absolute
   left: .2rem
   top: .2rem
-  width: .8rem
-  height: .8rem
-  line-height: .8rem
+  width: .7rem
+  height: .7rem
+  line-height: .7rem
   border-radius: .4rem
   text-align: center
-  background: rgba(0, 0, 0, .8)
+  background: rgba(0, 0, 0, .5)
   .back-icon-abs
     color: #fff
-    font-size: .4rem
+    font-size: .35rem
     font-weight: bold
-    padding-top: .02rem
-    padding-right: .07rem
 .header-fixed
   z-index: 2
   position: fixed
