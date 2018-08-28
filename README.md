@@ -1,6 +1,6 @@
 # travel
 
-> A Vue.js project
+> 使用vue.js进行开发的网页，功能尚未齐全。
 
 ## Build Setup
 
