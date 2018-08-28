@@ -26,7 +26,7 @@ export default {
       for (let i in this.cities) {
         letters.push(i)
       }
-      return letters
+      return letters // 得到ABCD...
     }
   },
   data () {
@@ -37,14 +37,14 @@ export default {
     }
   },
   updated () {
-    this.startY = this.$refs['A'][0].offsetTop
+    this.startY = this.$refs['A'][0].offsetTop // A到顶部的距离
   },
   methods: {
     handleLetterClick (e) {
-      this.$emit('change', e.target.innerText)
+      this.$emit('change', e.target.innerText) // 向外触发change事件
     },
     handleTouchStart () {
-      this.touchStatus = true
+      this.touchStatus = true // 手指触摸为ture时，开始
     },
     handleTouchMove (e) {
       if (this.touchStatus) {
