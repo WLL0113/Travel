@@ -3,6 +3,7 @@
     <detail-banner></detail-banner>
     <detail-header></detail-header>
     <div class="content">
+      <detail-alist></detail-alist>
       <detail-list :list="list"></detail-list>
     </div>
   </div>
@@ -12,12 +13,14 @@
 import DetailBanner from './components/Banner'
 import DetailHeader from './components/Header'
 import DetailList from './components/List'
+import DetailAlist from './components/Alist'
 
 export default {
   name: 'Detail',
   components: {
     DetailBanner,
     DetailHeader,
+    DetailAlist,
     DetailList
   },
   data () {
