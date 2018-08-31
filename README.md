@@ -28,3 +28,4 @@ For a detailed explanation on how things work, check out the [guide](http://vuej
 - Better-scroll的简单使用
 - 搜索逻辑实现
 - 兄弟组件间的传值
+- 解决1像素边框问题
