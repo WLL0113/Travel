@@ -34,7 +34,7 @@ export default {
       axios.get('api/city.json')
         .then(this.getCityInfoSucc)
     },
-    getCityInfoSucc (res) {
+    getCityInfoSucc (res) { // 模拟数据结果
       res = res.data
       if (res.ret && res.data) {
         const data = res.data

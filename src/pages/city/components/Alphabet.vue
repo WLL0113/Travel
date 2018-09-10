@@ -4,10 +4,10 @@
      class="item" v-for="item of letters"
      :key="item"
      :ref="item"
+     @click="handleLetterClick"
      @touchstart.prevent="handleTouchStart"
      @touchmove="handleTouchMove"
      @touchend="handleTouchEnd"
-     @click="handleLetterClick"
     >
      {{item}}
    </li>
