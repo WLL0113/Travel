@@ -4,12 +4,11 @@
       <div class="iconfont back-icon">&#xe624;</div>
     </div>
     <div class="header-input">
-      <span class="iconfont">&#xe632;</span>
-      <input v-model="keyword" type="text" placeholder="输入城市/景点/游玩主题"/>
+      <span class="iconfont">&#xe632;</span>输入城市/景点/游玩主题
     </div>
       <router-link to='/city'>
       <div class="header-right">
-        {{this.$store.state.city}}
+        {{this.city}}
         <span class="iconfont arrow-icon">&#xe64a;</span>
       </div>
     </router-link>
@@ -17,7 +16,7 @@
 </template>
 
 <script>
-import { mapState } from 'vuex'
+import { mapState } from 'vuex' // vuex给了一个高级的api
 export default {
   name: 'HomeHeader',
   data () {
@@ -25,8 +24,8 @@ export default {
       keyword: ''
     }
   },
-  computed: {
-    ...mapState(['city'])
+  computed: { // mapState是指把vuex里的数据映射到这个组件的computed的计算书属性里,把city这个公用数据映射到，名字叫city的计算属性中
+    ...mapState(['city']) // ...展开运算符,['city']数组
   }
 }
 </script>
@@ -51,11 +50,12 @@ export default {
       line-height: .64rem
       margin-top: .12rem
       padding-left: .2rem
-      border-radius: .1rem
+      margin-right: .05rem
+      border-radius: .05rem
       background:#fff
       color:#ccc
     .header-right
-      minwidth: 1.04rem
+      min-width: 1.04rem
       padding: 0 .1rem
       float:right
       text-align:center

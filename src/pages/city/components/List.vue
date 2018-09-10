@@ -53,15 +53,15 @@ export default{
   },
   computed: {
     ...mapState({
-      currentCity: 'city'
+      currentCity: 'city' // 一个对象，vuex里面的公用数据city，映射到我这个计算属性里，名字叫currentCity
     })
   },
   methods: {
     handleCityClick (city) {
-      this.changeCity(city)
+      this.changeCity(city) // 把city传进去
       this.$router.push('/')
     },
-    ...mapMutations(['changeCity'])
+    ...mapMutations(['changeCity']) // 有个一个mutation叫做changecity 我把这个mutation映射到组件里面名字叫做changecity的方法里
   },
   mounted () {
     this.scroll = new BScroll(this.$refs.wrapper)
