@@ -1,17 +1,20 @@
 <template>
   <div class=content>
     <div>
-      <Search-Header></Search-Header>
+      <search-Header></search-Header>
+      <search-list></search-list>
     </div>
   </div>
 </template>
 
 <script>
 import SearchHeader from './components/Header'
+import SearchList from './components/List'
 export default {
   name: 'Search',
   components: {
-    SearchHeader
+    SearchHeader,
+    SearchList
   }
 }
 </script>
